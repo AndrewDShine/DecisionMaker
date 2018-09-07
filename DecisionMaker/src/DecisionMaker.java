@@ -41,7 +41,14 @@ public class DecisionMaker
 		}
 		public static void makeChoice(int randChoice)
 		{
-			System.out.println("You should choose '"+possibleChoices.get(randChoice)+"'. Hope it helps!");
+			if (possibleChoices.size() == 0)
+				{
+					System.out.println("You have to enter at least one choice.");
+				}
+			else
+				{
+					System.out.println("You should choose '"+possibleChoices.get(randChoice)+"'. Hope it helps!");
+				}
 		}
 
 	}
